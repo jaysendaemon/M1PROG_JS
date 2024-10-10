@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+</body>
+<script>
+    function PrintAlphaBet(){
+        console.log("A")
+        console.log("B")
+        console.log("C")
+        console.log("D")
+        console.log("E")
+        console.log("F")
+        console.log("G")
+        console.log("H")
+        console.log("I")
+
+    }
+
+    PrintAlphaBet();
+    
+
+    function add(getal1, getal2){
+        let sum = getal1 + getal2;
+        console.log(sum);
+
+    }
+
+    add(5, 9);    
+    add(3, 8);
+
+    function multiplydie(getal1, getal2){
+       let sum  = getal1 * getal2;
+       console.log(sum)
+    }
+
+    multiplydie(3, 3);
+
+    function RollDice(){
+        let random = Math.random();
+        let getal = random * 6;
+        getal = Math.ceil(getal);
+        console.log(getal)
+        return getal;
+    }
+    let dobbelsteen1 = RollDice();
+    console.log(dobbelsteen1)
+
+    RollDice();
+    RollDice();
+    RollDice();
+
+    function Bereken (geboorteJaar, geboorteMaand, geboorteDag){
+        let now = new Date();
+        let birth = new Date(2008, 2, 9)
+        let miliseconds = now-birth;
+
+        let geboortedatum = now - birth
+        
+    }
+    console.log(geboortedatum);
+
+    function largerNum(getal1, getal2){
+     if(getal1 == getal2){
+        
+     }
+    }
+
+
+
+    
+
+
+    
+</script>
+</html>
