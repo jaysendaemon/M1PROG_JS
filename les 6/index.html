@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <p id="nummer"></p>
+    <p id="addedee"></p>
+    <p id="allgetalen"></p>
+    <button onclick="buttonClick()">Roll the dice</button>
+</body>
+<script>
+    function RollDice() {
+        let random = Math.floor(Math.random() * 6);
+        return (random);
+    }
+    function buttonClick() {
+        let dice1 = RollDice();
+        let dice2 = RollDice();
+        let dice3 = RollDice();
+        let dice4 = RollDice();
+
+        let min = Math.min(dice1, dice2, dice3, dice4)
+        let calcmin = dice1 + dice2 + dice3 + dice4 - min;
+
+        console.log(dice1 + dice2 + dice3 + dice4 - min)
+        console.log(min + " is het laagste getal")
+
+
+        let minimum = document.getElementById("nummer")
+        let added = document.getElementById("addedee")
+        let allgetal = document.getElementById("allgetalen")
+
+        minimum.innerText = "Laagste getal: " + min;
+        added.innerText = "Bij elkaar min het laagste getal: " + calcmin;
+        allgetal.innerText = "Getalen die zijn gerolled: " + dice1 + ", " + dice2 + ", " + dice3 + ", " + dice4;
+    }
+</script>
+
+</html>
